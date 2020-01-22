@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.eekrain.amikomparking">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/parkir_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/parkir_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SplashActivity1" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".HistoryActivityBkp" />
+        <activity android:name=".ConfirmActivity" />
+        <activity
+            android:name=".QRScanActitivy"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

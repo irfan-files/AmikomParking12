@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AmikomParking</string>
+
+    <string-array name="plat">
+        <item>AB 2381 DC</item>
+        <item>AB 1242 DC</item>
+        <item>AB 2312 DC</item>
+        <item>AB 2312 DC</item>
+    </string-array>
+
+    <string-array name="jenis">
+        <item>Motor</item>
+        <item>Motor</item>
+        <item>Mobil</item>
+        <item>Mobil</item>
+    </string-array>
+</resources>
